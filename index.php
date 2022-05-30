@@ -25,4 +25,4 @@
     echo " Sum of salary of Persons is ". $SumOfSalary. " <br> Sum of ages of Persons is ". $SumOfAges;
 
     $person_1->identify();
-?>
+
