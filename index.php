@@ -5,6 +5,8 @@
     require_once "./classes/User.php";
     require_once "./classes/Student.php";
     require_once "./classes/City.php";
+    require_once "./classes/Arr.php";
+
 
     $person_1 = new employee("MyName", 19, 1000000);
     $person_2 = new employee("YourName", 29, 2000000);
@@ -41,3 +43,8 @@
     foreach ($cities as $value) {
         echo $value->getName()." population: ". $value->getPopulation()."<br>";
     }
+
+    $ArrOfNumber = [3,3,3,3,3];
+    $arr = new Arr;
+    $arr->setNumbers($ArrOfNumber);
+    echo $arr->getAverage();
