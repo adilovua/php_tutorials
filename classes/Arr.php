@@ -28,7 +28,7 @@ class Arr
             return $sum/count($this->numbers);
         }
         else {
-           echo "Array is not given or Data you gave is not an Array";
+           echo "Data is not given or Data you gave is not an Array";
         }
     }
 }
