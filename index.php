@@ -5,8 +5,10 @@
     require_once "./classes/User.php";
     require_once "./classes/Student.php";
     require_once "./classes/City.php";
+    require_once "./classes/City_1.php";
     require_once "./classes/Arr.php";
     require_once "./classes/Arr_1.php";
+    require_once "./classes/ArrayAvgHelper.php";
 
 
     $person_1 = new employee("MyName", 19, 1000000);
@@ -59,3 +61,12 @@
     $MyArray->Add(2);
     echo $MyArray->getAverage();
 
+    $MyCity = new City_1("Tashkent", 3000000, 1200);
+    $prop = ['name', 'population', 'foundation'];
+    foreach ($prop as $value)
+    {
+        echo $MyCity->getValue($value)."<br>";
+    }
+
+    $MyArrayAvg = new ArrayAvgHelper();
+    echo $MyArrayAvg->getAvg3([8,8,8,8,8]);
