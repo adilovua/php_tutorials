@@ -6,6 +6,7 @@
     require_once "./classes/Student.php";
     require_once "./classes/City.php";
     require_once "./classes/Arr.php";
+    require_once "./classes/Arr_1.php";
 
 
     $person_1 = new employee("MyName", 19, 1000000);
@@ -48,3 +49,13 @@
     $arr = new Arr;
     $arr->setNumbers($ArrOfNumber);
     echo $arr->getAverage();
+
+    echo "<br>";
+    echo "<br>";
+    $MyArray = new Arr_1();
+    $MyArray->Add(1);
+    $MyArray->Add(2);
+    $MyArray->Add(3);
+    $MyArray->Add(2);
+    echo $MyArray->getAverage();
+
